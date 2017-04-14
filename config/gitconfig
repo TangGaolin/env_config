@@ -1,0 +1,46 @@
+[user]
+	name = tanggaolin
+	email =gaolin.tang@wenba100.com
+
+[alias]
+	co = checkout
+	st = status
+	br = branch
+	ci = commit
+	dt = difftool
+        mt = mergetool
+
+[mergetool "Kaleidoscope"]
+[merge]
+[difftool "Kaleidoscope"]
+[difftool]
+[mergetool]
+[diff]
+[mergetool "Kaleidoscope"]
+[merge]
+[difftool "Kaleidoscope"]
+[difftool]
+	prompt = false
+[mergetool]
+	prompt = false
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustexitcode = true
+[merge]
+	tool = Kaleidoscope
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[diff]
+	tool = Kaleidoscope
+[pull]
+	default = current
+[push]
+	default = current
+[core]
+	editor = vim
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[color]
+	ui = auto

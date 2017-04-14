@@ -1,0 +1,17 @@
+Host github.com
+  Hostname ssh.github.com
+  Port 443
+Host bl
+  Hostname 106.75.75.144 
+  Port 9922
+  User gaolin.tang_prod
+  IdentityFile gaolin.tang_prod.pem
+Host jp
+  HostName 180.150.184.115
+  User gaolin.tang
+  Port 9933
+  IdentityFile gaolin.tang.pem
+Host jp_pro
+  HostName 120.132.94.83
+  User gaolin.tang
+  Port 60022
